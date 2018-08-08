@@ -11,30 +11,23 @@
     tools:context="com.gadgetsaint.downloadmanagerexample.MainActivity">
 
     <TextView
-        android:id="@+id/single"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="#fff"
-        android:padding="20dp"
-        android:background="#ce3910"
-        android:layout_centerInParent="true"
+        android:id="@+id/text_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Download single file" />
+        android:text="Hello World!" />
 
-
-
-    <TextView
-        android:layout_below="@+id/single"
-        android:id="@+id/multiple"
-        android:textSize="20sp"
-        android:layout_marginTop="50dp"
-        android:textStyle="bold"
-        android:textColor="#fff"
-        android:padding="20dp"
-        android:background="#10ce49"
-        android:layout_centerInParent="true"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/btn_download"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Download multiple files" />
+        android:layout_below="@id/text_status"
+        android:text="Download" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_cancel"
+        android:layout_below="@id/btn_download"
+        android:text="Cancel"/>
+
 </RelativeLayout>
